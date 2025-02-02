@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website - Donation Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="stories.html">STORIES</a></li>
+                    <li><a href="donation.html">DONATION</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="contact.html">CONTACT </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Donation Portal</h1>
+    </section>
+    
+    <!-- Donation Portal Section -->
+    <section class="donation-portal">
+        <h1>Support Our Cause</h1>
+        <p>Your generous donations help us continue our mission to provide quality education, improve facilities, and support students in need.</p>
+        <div class="row">
+            <div class="donation-col">
+                <h3>Support Scholarships</h3>
+                <p>Help us provide scholarships to deserving students who excel academically but face financial challenges.</p>
+                <button class="donate-btn">Donate Now</button>
+            </div>
+            <div class="donation-col">
+                <h3>Enhance Facilities</h3>
+                <p>Contribute to the enhancement of our campus facilities, including libraries, labs, and sports complexes, ensuring students have access to the best resources.</p>
+                <button class="donate-btn">Donate Now</button>
+            </div>
+            <div class="donation-col">
+                <h3>Community Outreach</h3>
+                <p>Support our community outreach programs that aim to provide education, mentorship, and resources to underprivileged areas.</p>
+                <button class="donate-btn">Donate Now</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Donation Information Section -->
+    <section class="donation-info">
+        <h1>Why Donate?</h1>
+        <p>Your donations make a significant impact on our institution and the community. Here’s how your contributions are used:</p>
+        <div class="row">
+            <div class="info-col">
+                <img src="img2/scholar.png" alt="Scholarship">
+                <h3>Student Scholarships</h3>
+                <p>Funds go directly towards providing scholarships for students in need, supporting their academic journey.</p>
+            </div>
+            <div class="info-col">
+                <img src="img2/facility.png" alt="Facilities">
+                <h3>Facility Upgrades</h3>
+                <p>Invest in the future by enhancing our facilities, ensuring that our students have access to the best learning environment.</p>
+            </div>
+            <div class="info-col">
+                <img src="img2/comunityfinal.webp" alt="Community Outreach">
+                <h3>Community Programs</h3>
+                <p>Your support enables us to extend our educational services beyond the campus, helping communities grow and thrive.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Menu toggle script
+        function showMenu() {
+            document.getElementById('navLinks').style.right = "0";
+        }
+
+        function hideMenu() {
+            document.getElementById('navLinks').style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
+
+
+<!-------- footer ---------->
+
+<section class="footer">
+        <h4>About Us</h4>
+        <p>"Building lasting connections that inspire and uplift our community"</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>made with <i class="fa fa-heart-o"></i> by UNICONN@</p>
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>  
+    
+</body>
+</html>    

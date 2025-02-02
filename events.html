@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website - Events</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="stories.html">STORIES</a></li>
+                    <li><a href="donation.html">DONATION</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="contact.html">CONTACT </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Upcoming Events & Workshops 2024</h1>
+    </section>
+
+    <!-- Event Section Content -->
+    <section class="event-content">
+        <div class="row">
+            <div class="event-left">
+                <img src="images/eventimg.jpg" alt="Event Image">
+                <h2>Annual Alumni Meet 2024</h2>
+                <p>Join us for our Annual Alumni Meet, where graduates reconnect, network, and share their success stories. The event will include keynote sessions, networking opportunities, and panel discussions with industry leaders.</p>
+                <br>
+                <p>Date: March 25, 2024<br>
+                Time: 10:00 AM - 4:00 PM<br>
+                Location: University Auditorium, City Campus</p>
+                <br>
+                <p>Don’t miss this chance to meet fellow alumni, engage in thought-provoking discussions, and enjoy a day filled with inspiration and learning. Register now to secure your spot!</p>
+                
+                <div class="register-box">
+                    <h3>Register for the Event</h3>
+                    <form class="register-form">
+                        <input type="text" placeholder="Enter Name" required>
+                        <input type="email" placeholder="Enter Email" required>
+                        <input type="text" placeholder="Contact Number" required>
+                        <button type="submit" class="hero-btn red-btn">REGISTER NOW</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="event-right">
+                <h3>Event Categories</h3>
+                <div>
+                    <span>Networking Events</span>
+                    <span>12</span>
+                </div>
+                <div>
+                    <span>Workshops</span>
+                    <span>18</span>
+                </div>
+                <div>
+                    <span>Conferences</span>
+                    <span>10</span>
+                </div>
+                <div>
+                    <span>Webinars</span>
+                    <span>25</span>
+                </div>
+                <div>
+                    <span>Reunions</span>
+                    <span>8</span>
+                </div>
+                <div>
+                    <span>Career Fairs</span>
+                    <span>5</span>
+                </div>
+                <div>
+                    <span>Alumni Meetups</span>
+                    <span>14</span>
+                </div>
+            </div> 
+        </div>
+    </section>
+    
+    <script>
+        // Menu toggle script
+        function showMenu() {
+            document.getElementById('navLinks').style.right = "0";
+        }
+
+        function hideMenu() {
+            document.getElementById('navLinks').style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
+
+    
+<!-------- footer ---------->
+
+<section class="footer">
+        <h4>About Us</h4>
+        <p>"Building lasting connections that inspire and uplift our community"</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>made with <i class="fa fa-heart-o"></i> by UNICONN</p>
+</section>     
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>    

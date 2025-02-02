@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+/* Success Stories Section */
+.success-stories {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding: 60px 0;
+    background-color: #fafafa;
+}
+
+.success-stories h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.success-stories p {
+    color: #666;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+/* Stories Container */
+.story-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 10px;
+}
+
+/* Single Story Card */
+.story {
+    flex-basis: 31%;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.story img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.story h3 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.story p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.story:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .story-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .story {
+        flex-basis: 100%;
+    }
+}

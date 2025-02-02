@@ -1,0 +1,171 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNICONN: Bridging Alumni Connections</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>  
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/Logo.svg"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="stories.html">STORIES</a></li>
+                    <li><a href="donation.html">DONATION</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>BRIDGING THE PAST WITH TOMORROW</h1>
+            <p>"Unlock opportunities, rekindle connections, and transform memories into milestones with our Alumni Association platform: Your gateway to future success."</p>
+            <a href="register.html" class="hero-btn">REGISTER HERE</a> <!-- Replaced with REGISTER button -->
+        </div>
+    </section>
+    
+<!---------- Alumni Features ----------->
+    
+<section class="course">
+    <h1><b>Opportunities for Impactful Engagement: </b></h1>
+    <p>Explore how you can give back, share knowledge, or find new career opportunities.</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Success Stories Showcase</h3>
+            <p>Highlighting inspiring alumni achievements with captivating visuals and engaging narratives.</p>
+        </div>
+        <div class="course-col">
+            <h3>Events Promotion Portal</h3>
+            <p>Discover upcoming events with eye-catching banners and detailed descriptions for alumni engagement.</p>
+        </div>
+        <div class="course-col">
+            <h3>Secure Donation Portal</h3>
+           <p> Join our secure donation portal to support initiatives and enhance alumni connections.            </div></p>
+    </div>
+</section>
+    
+<!---------- Global Impact ----------->
+    
+    <section class="campus">
+        <h1><b>Our Partner Institutions:</b></h1>
+        <p>Alumni across the world, connected by a shared legacy.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="img2/nsit.jpeg">
+                <div class="layer">
+                    <h3>NSIT</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="img2/rgit.jpg">
+                <div class="layer">
+                    <h3>RGIPT</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="img2/manit.png">
+                <div class="layer">
+                    <h3>MANIT</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!---------- Notable Alumni ---------->
+
+    <section class="facility">
+        <h1>Notable Alumni</h1>
+        <p>Meet the leaders who once walked the same corridors as you.</p>
+        <div class="row">
+            <div class="facility-col">
+                <img src="images/alum1.jpeg">
+                <h3>Dr. Biswajit Roy</h3>
+                <p>Director General, GERMI</p>
+            </div>
+            <div class="facility-col">
+                <img src="images/alum2.jpeg">
+                <h3>Shubham Gupta</h3>
+                <p>Manager, ONGC</p>
+            </div>
+            <div class="facility-col">
+                <img src="images/alum3.jpeg">
+                <h3>Dr. Mohd Belal Haider</h3>
+                <p>Scientist at CSIR-IIP, Dehradun</p>
+            </div>
+        </div>
+    </section>
+    
+<!---------- Testimonials ---------->
+    
+    <section class="testimonials">
+        <h1>What Our Alumni Say</h1>
+        <p>Hear from those who have benefited from our platform.</p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="images/user1.jpg">
+                <div> 
+                    <p>"UNICONN helped me reconnect with my alma mater in ways I never thought possible. It’s been a true game-changer in my professional journey."</p>
+                    <h3>Christine Berkley</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="images/user2.jpg">
+                <div>
+                    <p>"The event portal makes organizing alumni meetups a breeze! I’ve never felt more engaged with my alumni network."</p>
+                    <h3>David Byer</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!------ Call To Action ------>
+
+    <section class="cta">
+       <h1>Become Part of the UNICONN Community</h1>
+        <a href="contact.html" class="hero-btn">Join Us Today</a>
+    </section>    
+ 
+<!-------- footer ---------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>"Building lasting connections that inspire and uplift our community."</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>made with <i class="fa fa-heart-o"></i> by UNICONN</p>
+    </section>     
+
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>

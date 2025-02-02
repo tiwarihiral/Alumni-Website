@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>University Website - Donation Portal</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    </head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.svg" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="stories.html">STORIES</a></li>
+                    <li><a href="donation.html">DONATION</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Success Stories</h1>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="success-stories">
+        <p>Our alumni have reached new heights in their careers and lives. Read their stories and be inspired by their journeys.</p>
+
+        <div class="story-container">
+            <!-- Story 1 -->
+            <div class="story">
+                <img src="img2/chirag.jpeg" alt="Chirag Jain">
+                <h3>Chirag Jain</h3>
+                <p>GAIL (India) Ltd. | President's Gold Medalist | RGIPT'23 | AIR 50 GATE'23 CH | Selected for BARC OCES'23</p>
+                <p>Chirag achieved top academic honors and is now thriving in his role at GAIL, making an impact in the chemical engineering sector. He has guided over 1000 students in GATE preparation.</p>
+            </div>
+
+            <!-- Story 2 -->
+            <div class="story">
+                <img src="img2/aditya.jpeg" alt="Amit Das">
+                <h3>Amit Das</h3>
+                <p>IIM Trichy'26 | Ex-IOAG | RGIPT'22</p>
+                <p>Amit transitioned from working with Indian Oil-Adani Gas to pursuing an MBA at IIM Trichy, showcasing his leadership and business acumen.</p>
+            </div>
+
+            <!-- Story 3 -->
+            <div class="story">
+                <img src="img2/vasundra.jpeg" alt="Vasundhara Pant">
+                <h3>Vasundhara Pant</h3>
+                <p>Software Engineer II @Walmart | Contributor @GirlScript Summer of Code'23</p>
+                <p>Vasundhara is a passionate software engineer with expertise in full-stack development and a growing interest in machine learning and data science.</p>
+            </div>
+
+            <!-- Story 4 -->
+            <div class="story">
+                <img src="img2/utkarsh.jpeg" alt="Utkarsh Shukla">
+                <h3>Utkarsh Shukla</h3>
+                <p>Intern at OIL & ONGC | GATE'23&24 | Recipient of Donald & Nancy Frye Scholarship</p>
+                <p>Utkarsh's journey as a top-ranked student led to internships with OIL and ONGC, contributing to his growth in the energy sector.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Menu toggle script
+        function showMenu() {
+            document.getElementById('navLinks').style.right = "0";
+        }
+
+        function hideMenu() {
+            document.getElementById('navLinks').style.right = "-200px";
+        }
+    </script>
+
+<!-------- footer ---------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>"Building lasting connections that inspire and uplift our community"</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>made with <i class="fa fa-heart-o"></i> by UNICONN</p>
+</section>     
+
+
+<!----JavaScript for toggle menu---->
+<script>
+var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+    navLinks.style.right = "0";
+}
+
+function hideMenu() {
+    navLinks.style.right = "-200px";
+}
+</script> 
+
+</body>
+</html>    
